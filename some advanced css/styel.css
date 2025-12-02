@@ -1,0 +1,64 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100%;
+  height: 100%;
+}
+
+:root {
+  /* CSS Variables (Custom Properties) */
+  --grid-gap: 20px;
+  --card-bg: #2c3e50;
+  --card-color: #ecf0f1;
+  --hover-scale: 1.05;
+}
+
+.card-grid {
+  /* Essential for 3D transforms on child elements */
+  perspective: 1500px;
+  display: grid;
+  gap: var(--grid-gap); /* Use the variable */
+  padding: var(--grid-gap);
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.card {
+  background-color: var(--card-bg);
+  color: var(--card-color);
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  /* Apply smooth transition to all transform/shadow changes */
+  transition: transform 0.3s ease-out, box-shadow 0.3s ease-out;
+}
+
+.card-grid {
+  /* Auto-responsive grid: repeat as many columns as fit, 
+     each at a minimum width of 250px and maximum 1fr */
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.card__content {
+  height: 100%;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center vertically */
+  align-items: center; /* Center horizontally */
+  text-align: center;
+}
+
+.card:hover {
+  /* 1. Scale up slightly for emphasis */
+  transform: scale(var(--hover-scale))
+    /* 2. Rotate slightly on the Y-axis for a 3D peek */ rotateY(5deg)
+    /* 3. Move forward in Z-space, enhancing the 3D effect */ translateZ(50px);
+
+  /* Lift the shadow */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+  /* The z-index brings the hovered card in front of its siblings */
+  z-index: 10;
+}
