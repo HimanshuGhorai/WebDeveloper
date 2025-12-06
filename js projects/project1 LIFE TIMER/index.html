@@ -13,16 +13,46 @@
   <body>
     <div id="background">
       <div class="heading_container">
-        <h1>Kindly Enter Your Date Of Birth</h1>
+        <div class="h1container" id="incitialText">
+          <h1>Kindly Enter Your Date Of Birth</h1>
+        </div>
+        <div id="afterDOBbutton">
+          <div class="timesShow">
+            <h2>
+              <div class="years">0</div>
+              years
+            </h2>
+            <h2>
+              <div class="month">0</div>
+              month
+            </h2>
+            <h2>
+              <div class="day">0</div>
+              day
+            </h2>
+            <h2>
+              <div class="hours">0</div>
+              hours
+            </h2>
+            <h2>
+              <div class="minutes">0</div>
+              minutes
+            </h2>
+            <h2>
+              <div class="seconds">0</div>
+              seconds
+            </h2>
+          </div>
+        </div>
       </div>
       <div class="input_section">
-        <i class="ri-settings-4-fill"></i>
-        <div id="setting_content">
+        <i id="iconSetting" class="ri-settings-4-fill"></i>
+        <div id="setting_content" class="hide">
           <input type="date" id="DOB" placeholder="choose the date" />
           <button id="DOBButton">Add DOB</button>
           <p></p>
         </div>
-      </div> 
+      </div>
     </div>
 
     <script src="./app.js"></script>
