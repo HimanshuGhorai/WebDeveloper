@@ -5,6 +5,13 @@ const SettingContentEL = document.getElementById("setting_content");
 const incitialTextEL = document.getElementById("incitialText");
 const afterDOBbuttonEL = document.getElementById("afterDOBbutton");
 const DOBButtonEL = document.getElementById("DOBButton");
+const useclass = document.querySelectorAll("DOBButton");
+const yearEl = document.querySelectorAll(".years");
+const monthEl = document.querySelectorAll(".month");
+const dayEl = document.querySelectorAll(".day");
+const hoursEl = document.querySelectorAll(".hours");
+const minutesEl = document.querySelectorAll(".minutes");
+const secondsEl = document.querySelectorAll(".seconds");
 
 const toggleDateOfBirthSelector = () => {
   if (IsDobOpen) {
@@ -18,8 +25,22 @@ const toggleDateOfBirthSelector = () => {
 
 const setDobhendler = () => {
   DateofBirth = DOB.value;
-  console.log("tate of birth", DateofBirth);
+  if (DateofBirth) {
+    incitialTextEL.classList.add("hide");
+    afterDOBbuttonEL.classList.remove("hide");
+  } else {
+    afterDOBbuttonEL.classList.add("hide");
+    incitialTextEL.classList.remove("hide");
+  }
 };
 
+const UpdateAge = () => {
+  const currentDate = new Date();
+  console.log({ currentDate });
+};
+
+UpdateAge();
+
+setDobhendler();
 IconSattingEL.addEventListener("click", toggleDateOfBirthSelector);
-DOBButtonEL.addEventListener("click", toggleDateOfBirthSelector);
+DOBButtonEL.addEventListener("click", setDobhendler);
