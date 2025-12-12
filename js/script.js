@@ -6,13 +6,13 @@
 
 // decleration and initialization
 
-var a; //initialization
-var name = "himu"; // initialization and declaraton both;
+// var a; //initialization
+// var name = "himu"; // initialization and declaraton both;
 
-// hosting
+// // hosting
 
-console.log(a);
-var a = 12;
+// console.log(a);
+// var a = 12;
 
 // console.log(b);
 // let b = 23;
@@ -26,7 +26,80 @@ var a = 12;
 
 // prmitive data type is : string,number,boolean,null,symbol,bigint;'
 // string
-let stringName = "himanshu";
-console.log(stringName);
+// let stringName = "himanshu";
+// console.log(stringName);
 
 // not prmitive data type is: array,objects,function,
+
+// --------- Operator----------
+
+// Arithmetic Operator EX:- adding,substraction,multiplication,divison,modulo,exponentiation,and increases/decreases operator;
+
+// adding
+
+// let x = 10;
+// let y = 2;
+// console.log("x = ", x);
+// console.log("y = ", y);
+// let z = x + y; // this is adding
+// console.log("adding", z);
+// z = x - y;
+// console.log("subtraction", z);
+// z = x * y;
+// console.log("multipliction", z);
+// z = x / y;
+// console.log("divison", z);
+// z = x % y;
+// console.log("modulo", z);
+// z = x ** y;
+// console.log("exponentiation", z);
+// z = x++;
+// console.log("increment :postfix", z);
+// z = ++x;
+// console.log("increment :prefix", z);
+// z = --y;
+// console.log("prefix : dicrement", z);
+// z = y--;
+// console.log("postfix :dicrement", z);
+
+//assignment operator :- assign valu to variable; and basic operator si  = ; we are using combined and use like this let n += 5; it mins that  let n = n + 5;
+// let a = 0;
+// a += 5;
+// console.log(a);
+
+// comparison
+// Return true or false.
+
+// == equality (loose) — converts types if needed.
+// 5 == "5" // true
+
+// === strict equality — no type conversion, recommended.
+// 5 === "5" // false
+
+// != and !== not equal (loose and strict)
+
+// <, >, <=, >= (less/greater than)
+
+// > example: 10 > 7 // true
+
+// Pitfall: prefer === and !== to avoid unexpected type coercion.
+
+// Special case: NaN (Not-a-Number) is never equal to itself:
+// NaN === NaN // false — use Number.isNaN(value) to check.
+
+// 13) Short practice tasks (3)
+
+// What does console.log("5" - 2); print? Why?
+// 3
+// console.log("5" - 2);
+
+// Write an expression that prints "even" if n is even, otherwise "odd". (Hint: use % and ternary.)
+// let n = 4;
+// const ruselt = n % 2 === 0 ? "even" : "odd";
+// console.log(ruselt);
+
+// Given let score = 0; write let final = score || 10; and let final2 = score ?? 10; — what are final and final2? Why different?
+
+// let score = 0;
+// let final = score || 10;
+// let final2 = score ? 10;
