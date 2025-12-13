@@ -103,3 +103,25 @@
 // let score = 0;
 // let final = score || 10;
 // let final2 = score ? 10;
+
+// this is if condition :-----------------
+// let age = 12;
+// if (age > 18) {
+//   console.log("you are eligible for vote");
+// }
+
+// this is the if else condition ;
+let age = 23;
+if (age > 18) {
+  console.log("you can vote");
+} else {
+  console.log("you can not vote");
+}
+
+let hasID = true;
+
+if (age >= 18 && hasID) {
+  console.log("Allowed");
+} else {
+  console.log("Not allowed");
+}
