@@ -111,17 +111,123 @@
 // }
 
 // this is the if else condition ;
-let age = 23;
-if (age > 18) {
-  console.log("you can vote");
+// let age = 23;
+// if (age > 18) {
+//   console.log("you can vote");
+// } else {
+//   console.log("you can not vote");
+// }
+
+// let hasID = true;
+
+// if (age >= 18 && hasID) {
+//   console.log("Allowed");
+// } else {
+//   console.log("Not allowed");
+// }
+
+// Beginner Level (Easy)
+// 1️⃣ Write a program to check if a number is positive or negative.
+
+// let num = 11;
+
+// if (0 < num) {
+//   console.log("this nuber is positive");
+// } else if (num === 0) {
+//   console.log("this number is zero");
+// } else {
+//   console.log("this number is negative (-)");
+// }
+
+// 2️⃣ Write a program to check if a number is even or odd.
+
+// let num = 44;
+
+// if (num % 2 === 0) {
+//   console.log(`${num}this number is even `);
+// } else {
+//   console.log(`${num}this number is odd`);
+// }
+
+// 3️⃣ Write a program to check if a person is eligible to vote (age ≥ 18).
+// let personAge = 8;
+
+// if (personAge >= 18) {
+//   console.log("you are eligible for the vote");
+// } else {
+//   console.log("you are not eligible for the vote");
+// }
+
+// 4️⃣ Write a program to check if a number is greater than 100.
+
+// let num = 222;
+
+// if (num > 100) {
+//   console.log("this number is greater than 100");
+// } else {
+//   console.log("this number is not greater than 100");
+// }
+
+// 5️⃣ Write a program to check if a string is empty or not.
+
+// let strings = "";
+
+// if (strings === "") {
+//   console.log("this string is empty");
+// } else {
+//   console.log("this string is not empty");
+// }
+
+// Intermediate Level (Medium)
+
+// 6️⃣ Write a program to find the largest of two numbers.
+
+// let num1 = 111;
+// let num2 = 111;
+
+// if (num1 > num2) {
+//   console.log(`${num1} is largest`);
+// } else if (num1 < num2) {
+//   console.log(`${num2} is largest`);
+// } else {
+//   console.log("both are equel");
+// }
+
+// 7️⃣ Write a program to find the largest of three numbers.
+
+let num1 = 222;
+let num2 = 24;
+let num3 = 44;
+
+if (num1 >= num2 && num1 >= num3) {
+  console.log(`${num1} is the largest number`);
+} else if (num2 >= num1 && num2 >= num3) {
+  console.log(`${num2} is the largest number`);
 } else {
-  console.log("you can not vote");
+  console.log(`${num3} is the largest number`);
 }
 
-let hasID = true;
+// 8️⃣ Write a program to check if a year is a leap year.
 
-if (age >= 18 && hasID) {
-  console.log("Allowed");
-} else {
-  console.log("Not allowed");
-}
+let leepyear = 2024;
+
+
+if(leepyear )
+
+
+
+// 9️⃣ Write a program to calculate grade based on marks:
+
+// 90+ → A
+
+// 75–89 → B
+
+// 50–74 → C
+
+// Below 50 → Fail
+
+// 🔟 Write a program to check if a user can login:
+
+// username is not empty
+
+// password length ≥ 6
