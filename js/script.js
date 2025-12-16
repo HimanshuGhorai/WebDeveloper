@@ -210,11 +210,15 @@ if (num1 >= num2 && num1 >= num3) {
 // 8️⃣ Write a program to check if a year is a leap year.
 
 let leepyear = 2024;
-
-
-if(leepyear )
-
-
+if (leepyear % 400 === 0) {
+  console.log(leepyear + " is a leap year");
+} else if (leepyear % 100 === 0) {
+  console.log(leepyear + " is not a leap year");
+} else if (leepyear % 4 === 0) {
+  console.log(leepyear + " is a leap year");
+} else {
+  console.log(leepyear + " is not a leap year");
+}
 
 // 9️⃣ Write a program to calculate grade based on marks:
 
@@ -225,6 +229,15 @@ if(leepyear )
 // 50–74 → C
 
 // Below 50 → Fail
+
+let marks = 103;
+
+if(marks >= 90){
+  console.log('grade A')
+}else if(marks >= 80){
+  console.log('grade B');
+  
+}else if(marks >= )
 
 // 🔟 Write a program to check if a user can login:
 
