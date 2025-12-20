@@ -230,17 +230,28 @@ if (leepyear % 400 === 0) {
 
 // Below 50 → Fail
 
-let marks = 103;
+let marks = 3;
 
-if(marks >= 90){
-  console.log('grade A')
-}else if(marks >= 80){
-  console.log('grade B');
-  
-}else if(marks >= )
+if (marks >= 90) {
+  console.log("grade A");
+} else if (marks >= 75) {
+  console.log("grade B");
+} else if (marks >= 50) {
+  console.log("grade C");
+} else {
+  console.log("Fail");
+}
 
 // 🔟 Write a program to check if a user can login:
 
-// username is not empty
+let userName = "";
+let password = "123456";
 
+if (userName !== "" && password.length >= 6) {
+  console.log("you login");
+} else {
+  console.log("you can't login");
+}
+
+// username is not empty
 // password length ≥ 6
