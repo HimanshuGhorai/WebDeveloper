@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>table</title>
+  </head>
+  <body>
+    <!-- style="background-color: aquamarine ; border: 2px solid black; text-align: center; border-collapse: collapse; width: 50%;" -->
+    <table border="2">
+      <thead>
+        <tr style="border: 2px solid black">
+          <td style="border: 2px solid black">Student Id</td>
+          <td style="border: 2px solid black">Student Name</td>
+          <td style="border: 2px solid black">Gender</td>
+          <td style="border: 2px solid black">Age</td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr style="border: 2px solid black">
+          <td style="border: 2px solid black">123</td>
+          <td style="border: 2px solid black">Ram</td>
+          <td style="border: 2px solid black">Male</td>
+          <td style="border: 2px solid black">12</td>
+        </tr>
+        <tr style="border: 2px solid black">
+          <td style="border: 2px solid black">124</td>
+          <td style="border: 2px solid black">Sum</td>
+          <td style="border: 2px solid black">Male</td>
+          <td style="border: 2px solid black" rowspan="4">14</td>
+        </tr>
+        <tr style="border: 2px solid black">
+          <td style="border: 2px solid black">125</td>
+          <td style="border: 2px solid black">Mia</td>
+          <td style="border: 2px solid black">Female</td>
+          <!-- <td style="border: 2px solid black;">16</td> -->
+        </tr>
+        <tr style="border: 2px solid black">
+          <td style="border: 2px solid black">126</td>
+          <td style="border: 2px solid black">lila</td>
+          <td style="border: 2px solid black">Female</td>
+          <!-- <td style="border: 2px solid black;">15</td> -->
+        </tr>
+      </tbody>
+    </table>
+
+    <table border="2">
+      <thead>
+        <tr>
+          <td>columu 1</td>
+          <td>columu 2</td>
+          <td>columu 3</td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td rowspan="2">row 1 col 1</td>
+          <td>row 1 sell 2</td>
+          <td>row 1 sell 3</td>
+        </tr>
+
+        <tr>
+          <td>row 2 sell 2</td>
+          <td>row 3 sell 3</td>
+        </tr>
+
+        <tr>
+          <td colspan="3">row 3</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <table border="2">
+      <thead>
+        <tr>
+          <td>Day</td>
+          <td>Meal</td>
+          <td>Food</td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td rowspan="2">Monday</td>
+          <td>Brakefast</td>
+          <td>Oatmeal</td>
+        </tr>
+        <tr>
+          <td>Brakefast</td>
+          <td>Oatmeal</td>
+        </tr>
+        <tr>
+          <td rowspan="2">Monday</td>
+          <td>Brakefast</td>
+          <td>Oatmeal</td>
+        </tr>
+        <tr>
+          <td>Brakefast</td>
+          <td>Oatmeal</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
