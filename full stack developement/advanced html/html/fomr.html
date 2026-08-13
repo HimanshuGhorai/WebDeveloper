@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- 
+    <input type="text" />
+    <input type="password" />
+    <input type="email" />
+    <input type="number" />
+    <input type="date" />
+    <input type="checkbox" />
+    <input type="radio" />
+    <input type="file" />
+    <input type="submit" /> -->
+
+    <!-- form =>1  -->
+    <!-- <form>
+      <label for="email">Enter your Email ID: </label>
+      <input type="text" id="email" />
+      <br />
+      <br />
+      <label for="password">Enter password: </label>
+      <input type="text" id="password" />
+      <br />
+      <br />
+      <input type="submit" value="submit" />
+    </form> -->
+
+    <form action="">
+      <label for="FullName" id="Name">Enter your full name: </label><br />
+      <input type="text" id="FullName" required />
+      <br />
+      <label for="Email" id="mail">Enter your Email: </label><br />
+      <input type="email" id="Email" required />
+      <br />
+      <label for="password">password</label><br />
+      <input type="password" id="password" name="password" required />
+      <br />
+      <label for="ConfirmPassword">Confirm Your Password</label><br />
+      <input
+        type="password"
+        id="ConfirmPassword"
+        name="ConfirmPassword"
+        required
+      />
+      <br />
+
+      <label>Enter your Gender: </label>
+
+      <input type="radio" id="Male" name="Gender" value="Male" required />
+      <label for="Male">Male</label>
+
+      <input type="radio" id="Female" name="Gender" value="Female" />
+      <label for="Female">Female</label>
+
+      <input type="radio" id="Others" name="Gender" value="Others" />
+      <label for="Others">Others</label>
+
+      <br />
+      <br />
+
+      <label for="occupationType">OccupationType</label>
+      <select name="occupationType" id="occupationType">
+        <option value="Student">Student</option>
+        <option value="profassional">profassional</option>
+        <option value="Others">Others</option>
+      </select>
+      <br />
+      <br />
+
+      <label for="DOB">Enter your date of birth</label>
+      <input type="date" name="dateOfBirth" id="DOB" required />
+
+      <br />
+      <br />
+
+      <label for="address">Address :</label><br />
+      <textarea
+        name="address"
+        id="address"
+        placeholder="Enter your Address "
+        required
+      ></textarea>
+
+      <br />
+      <input type="submit" value="submit" />
+    </form>
+  </body>
+</html>
