@@ -195,30 +195,30 @@
 
 // 7️⃣ Write a program to find the largest of three numbers.
 
-let num1 = 222;
-let num2 = 24;
-let num3 = 44;
+// let num1 = 222;
+// let num2 = 24;
+// let num3 = 44;
 
-if (num1 >= num2 && num1 >= num3) {
-  console.log(`${num1} is the largest number`);
-} else if (num2 >= num1 && num2 >= num3) {
-  console.log(`${num2} is the largest number`);
-} else {
-  console.log(`${num3} is the largest number`);
-}
+// if (num1 >= num2 && num1 >= num3) {
+//   console.log(`${num1} is the largest number`);
+// } else if (num2 >= num1 && num2 >= num3) {
+//   console.log(`${num2} is the largest number`);
+// } else {
+//   console.log(`${num3} is the largest number`);
+// }
 
 // 8️⃣ Write a program to check if a year is a leap year.
 
-let leepyear = 2024;
-if (leepyear % 400 === 0) {
-  console.log(leepyear + " is a leap year");
-} else if (leepyear % 100 === 0) {
-  console.log(leepyear + " is not a leap year");
-} else if (leepyear % 4 === 0) {
-  console.log(leepyear + " is a leap year");
-} else {
-  console.log(leepyear + " is not a leap year");
-}
+// let leepyear = 2024;
+// if (leepyear % 400 === 0) {
+//   console.log(leepyear + " is a leap year");
+// } else if (leepyear % 100 === 0) {
+//   console.log(leepyear + " is not a leap year");
+// } else if (leepyear % 4 === 0) {
+//   console.log(leepyear + " is a leap year");
+// } else {
+//   console.log(leepyear + " is not a leap year");
+// }
 
 // 9️⃣ Write a program to calculate grade based on marks:
 
@@ -230,28 +230,250 @@ if (leepyear % 400 === 0) {
 
 // Below 50 → Fail
 
-let marks = 3;
+// let marks = 3;
 
-if (marks >= 90) {
-  console.log("grade A");
-} else if (marks >= 75) {
-  console.log("grade B");
-} else if (marks >= 50) {
-  console.log("grade C");
-} else {
-  console.log("Fail");
-}
+// if (marks >= 90) {
+//   console.log("grade A");
+// } else if (marks >= 75) {
+//   console.log("grade B");
+// } else if (marks >= 50) {
+//   console.log("grade C");
+// } else {
+//   console.log("Fail");
+// }
 
 // 🔟 Write a program to check if a user can login:
 
-let userName = "";
-let password = "123456";
+// let userName = "";
+// let password = "123456";
 
-if (userName !== "" && password.length >= 6) {
-  console.log("you login");
-} else {
-  console.log("you can't login");
-}
+// if (userName !== "" && password.length >= 6) {
+//   console.log("you login");
+// } else {
+//   console.log("you can't login");
+// }
 
 // username is not empty
 // password length ≥ 6
+
+// ========= loops ======
+// Print numbers 1–10
+
+// for(let i = 0; i <= 10 ; i++){
+//   console.log(i);
+
+// }
+
+// Print even numbers from 1–20
+// for loop
+// for (let i = 1; i <= 20; i++) {
+//   if (i % 2 === 0) {
+//     console.log(i);
+//   }
+// }
+
+// let i = 1;
+
+// while(i < 20){
+//   if (i % 2 === 0) {
+//     console.log(i);
+//   }
+//   i++;
+// }
+
+// Print numbers from 10 down to 1
+
+// for(let i = 10 ; i >= 0; i--){
+//   console.log(i);
+
+// }
+
+// let i = 10 ;
+
+// while(i >= 1){
+//   console.log(i);
+//   i--;
+
+// }
+
+// Print the multiplication table of 5
+
+// let table = 5;
+
+// for (let i = 1; i < 10; i++) {
+//   console.log(`${table} X ${i} = ${table * i}`);
+
+// }
+
+// let table = 5;
+// let i = 1
+
+// while(i <= 10){
+//   console.log(`${table} X ${i} = ${table * i}`);
+// i++;
+// }
+
+// Find the sum of numbers from 1 to 100
+// let num = 100;
+// let sum = 0;
+
+// for (let i = 0; i <= num; i++) {
+//   sum += i;
+// }
+
+// console.log(sum);
+
+// let num = 100;
+// let sum = 0;
+// let i = 1
+
+// while (i <= num) {
+//   sum += i ;
+//   i++;
+// }
+
+// console.log(sum);
+
+// Count how many numbers from 1–100 are divisible by 3
+
+// for(let i =0; i <= 100; i++){
+//   if(i % 3 === 0){
+//     console.log(i);
+
+//   }
+// }
+
+// let i = 0;
+// while (i < 100) {
+//   if (i % 3 === 0) {
+//     console.log(i);
+//   }
+//   i++;
+// }
+
+// Print this pattern
+
+// *
+// **
+// ***
+// ****
+// *****
+
+// for (let i = 0; i < 5; i++) {
+
+//   let row = "";
+//   for (let j = 1; j <= i; j++) {
+//     row += "*";
+//   }
+
+//   console.log(row);
+// }
+
+// Find the factorial of a number
+
+// let num = 6;
+// let fac = 1;
+
+// for (let i = 1; i <= num; i++) {
+//   fac = fac * i;
+
+// }
+// console.log(fac);
+
+// Print numbers from 1 to 20, but stop when the number reaches 8.
+
+// for (let i = 1; i <= 20; i++) {
+
+//   if(i === 8 ){
+//     break
+//   }
+//     console.log(i);
+
+// }
+
+// Print numbers from 1 to 10, but skip 5.
+
+// for(let i = 1; i<= 10; i++){
+//   if(i === 5){
+//     continue;
+//   }
+//   console.log(i);
+
+// }
+// for (let i = 1; i <= 10; i++) {
+
+//     if (i === 6) {
+//         break;
+//     }
+
+//     console.log(i);
+// }
+
+// Print numbers from 1 to 20.
+// Rules:
+// If divisible by 3 → "Fizz"
+// If divisible by 5 → "Buzz"
+// If divisible by both → "FizzBuzz"
+// Otherwise → print the number
+
+// for (let i = 1; i <= 20; i++) {
+//   if (i % 3 === 0 && i % 5 === 0) {
+//     console.log("FizzBuzz");
+//     continue;
+//   }
+//   if (i % 3 === 0) {
+//     console.log("Fizz");
+//     continue;
+//   }
+//   if (i % 5 === 0) {
+//     console.log("Buzz");
+//     continue;
+//   }
+
+//   console.log(i);
+// }
+
+// Use a loop to check numbers from 1 to 20.
+// As soon as you find the first even number, print it and stop the loop using break.
+
+// for(let i = 1; i<= 20; i++){
+//   if(i % 2 ===0 ){
+//   console.log(i);
+
+//     break
+//   }
+//   console.log(i);
+
+// }
+
+// let number = Number(prompt("Enter your guess number: "));
+// let i = 10;
+
+// while (true) {
+//   if (i > number) {
+//     console.log("guess lower ");
+//   } else if (i < number) {
+//     console.log("guess higher ");
+//   } else {
+//     console.log("congratulations");
+//     break;
+//   }
+
+//   number = Number(prompt("Enter your guess number: "));
+// }
+
+
+// // Sum only even numbers
+// let sum = 0
+
+// for(let i = 1 ; i <= 10 ; i ++){
+//     if(i % 2 === 0){
+//       sum += i
+//     }
+// }
+
+// console.log(sum);
+
+
+
+
