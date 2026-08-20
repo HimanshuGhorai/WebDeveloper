@@ -462,7 +462,6 @@
 //   number = Number(prompt("Enter your guess number: "));
 // }
 
-
 // // Sum only even numbers
 // let sum = 0
 
@@ -474,6 +473,88 @@
 
 // console.log(sum);
 
+// =============function ===============
+
+// . Create a function called sayHello that prints "Hello World".
+// function sayHello(){
+//   console.log(`hello World`);
+
+// }
+
+// sayHello()
+
+// Create a function square(num) that returns the square of a number.
+// square(5);
+// 25
+
+// function square(num) {
+//   return num * num;
+// }
+
+// console.log(square(5));
+
+// Create a function add(a, b) that returns the sum.
+
+// add(10, 5);
+// // 15
+
+// function add(a,b){
+//   return a + b;
+// }
+
+// console.log(add(10,5));
+
+// Create a function isEven(num) that returns true if the number is even and false if it's odd.
+
+// isEven(10);
+// // true
+// isEven(7);
+// // false
+
+// function isEven(num) {
+//   if (num % 2 === 0) {
+//     console.log(`this number is Even`);
+//   } else {
+//     isOdd(num);
+//   }
+// }
+// function isOdd(num) {
+//   if (num % 2 !== 0) {
+//     console.log(`this number is odd`);
+//   }
+// }
+
+// isEven(14);
+// isEven(7);
+// isEven(8);
 
 
+// Challenge: Create a function findLargest(a, b, c) that returns the largest of three numbers.
 
+function findLargest(a,b,c){
+  if(a >b){
+    console.log(`${a} this is the largest`);
+    
+  }else if(b >c ){
+    console.log(`${b} this is the largest`);
+
+  }else if(c >a){
+    console.log(`${c} this is the largest`);
+
+  }
+}
+
+console.log(findLargest(23,45,67));
+
+
+function findLargest(a, b, c) {
+  if (a >= b && a >= c) {
+    return a;
+  } else if (b >= a && b >= c) {
+    return b;
+  } else {
+    return c;
+  }
+}
+
+console.log(findLargest(23, 45, 67));
