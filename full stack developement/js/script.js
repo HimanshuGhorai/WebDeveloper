@@ -31,6 +31,21 @@
 
 // not prmitive data type is: array,objects,function,
 
+// 10. Swap the values of two variables.
+
+// let a = 9;
+// let b = 90;
+
+// console.log(a);
+// console.log(b);
+
+// [a,b] = [b,a]
+
+// console.log(a);
+// console.log(b);
+
+
+
 // --------- Operator----------
 
 // Arithmetic Operator EX:- adding,substraction,multiplication,divison,modulo,exponentiation,and increases/decreases operator;
@@ -125,6 +140,19 @@
 // } else {
 //   console.log("Not allowed");
 // }
+
+
+
+// 2. Write a program to calculate the area of a rectangle.
+
+// let I = 20 ;
+// let W = 20;
+
+// let A = I * W;
+
+// console.log(A);
+
+
 
 // Beginner Level (Easy)
 // 1️⃣ Write a program to check if a number is positive or negative.
@@ -529,32 +557,130 @@
 // isEven(8);
 
 
-// Challenge: Create a function findLargest(a, b, c) that returns the largest of three numbers.
+// // Challenge: Create a function findLargest(a, b, c) that returns the largest of three numbers.
 
-function findLargest(a,b,c){
-  if(a >b){
-    console.log(`${a} this is the largest`);
+// function findLargest(a, b, c) {
+//   if (a >= b && a >= c) {
+//     return a;
+//   } else if (b >= a && b >= c) {
+//     return b;
+//   } else {
+//     return c;
+//   }
+// }
+
+// console.log(findLargest(23, 45, 67));
+// console.log(findLargest(23, 67, 45));
+
+// 12. Convert a normal function into an arrow function.
+// function greeting(){
+//   console.log('hello');
+  
+// }
+
+// greeting();
+
+
+// let greeting = () => {
+//   console.log('hello');
+
+// }
+// greeting();
+
+
+// let largest = (a,b,c) =>{
+//     if(a >= b && a>=c ){
+//         return a
+        
+//     }else if(b>=a && b >= c){
+//         return b
+//     }else{
+//         return c
+//     }
+// }
+
+// console.log(largest(55,66,88));
+
+
+
+// let student1 = "Rahul";
+// let student2 = "Amit";
+// let student3 = "Ravi";
+// let student4 = "Himanshu";
+
+// let student = ['Rahul','Amit','Rive','Himu']
+// console.log(student);
+
+
+// let fruits = ['Apple','Mengo','Bannana','Orange'];
+// console.log(fruits);
+// console.log(fruits[3]);
+
+
+// let manga = [];
+// console.log(manga);
+
+// const fruits = ['Apple','Mengo','Bannana','Orange'];
+
+// fruits[0] = 'orange'
+
+// console.log(fruits);
+
+// let fruits = ['Apple','Mengo','Bannana','Orange'];
+
+// console.log(fruits.length);
+
+// let fruits = ["Apple", "Mango", "Banana", "Orange"];
+
+// console.log(fruits[fruits.length-1]);
+
+// for(let i = 0; i < fruits.length; i++){
+//     // console.log(i);
+//     console.log(fruits[i]);
     
-  }else if(b >c ){
-    console.log(`${b} this is the largest`);
+// }
 
-  }else if(c >a){
-    console.log(`${c} this is the largest`);
 
-  }
+// Create an array called colors containing:
+
+// Red
+// Blue
+// Green
+// Yellow
+// Black
+
+
+// let colour = ['Red','Blue','Green','Yellow','black'];
+// console.log(colour);
+
+
+// let fruits = ["Apple", "Mango", "Banana", "Orange"];
+// console.log(fruits[0]);
+// console.log(fruits[2]);
+
+// let fruits = ["Apple", "Mango", "Banana"];
+
+// fruits[1] = 'origin'
+
+// console.log(fruits);
+
+// console.log(fruits.length);
+
+
+let numbers = [10, 20, 30, 40, 50];
+
+for(let i = 0; i < numbers.length;i++){
+    console.log(numbers[i]);
+    
 }
 
-console.log(findLargest(23,45,67));
 
 
-function findLargest(a, b, c) {
-  if (a >= b && a >= c) {
-    return a;
-  } else if (b >= a && b >= c) {
-    return b;
-  } else {
-    return c;
-  }
-}
+// let fruits = ["Apple", "Mango", "Banana", "Orange"];
 
-console.log(findLargest(23, 45, 67));
+
+
+
+
+
+
