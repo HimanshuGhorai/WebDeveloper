@@ -667,20 +667,35 @@
 // console.log(fruits.length);
 
 
-let numbers = [10, 20, 30, 40, 50];
+// let numbers = [10, 20, 30, 40, 50];
 
-for(let i = 0; i < numbers.length;i++){
-    console.log(numbers[i]);
+// for(let i = 0; i < numbers.length;i++){
+//     console.log(numbers[i]);
     
-}
+// }
 
 
 
 // let fruits = ["Apple", "Mango", "Banana", "Orange"];
 
+// console.log(fruits.length-1);
 
 
+// 5. How do you find the length of an array?
 
+let arr = [ 12,2,4,445,66,77,99 ]
 
+// console.log(arr);
 
+let lergest = arr[0];
+
+for (let i = 0; i < arr.length; i++) {
+    // const element = array[i];
+    if(lergest < arr[i]){
+        lergest += arr[i]
+    }
+    
+}   
+
+console.log(lergest);
 
