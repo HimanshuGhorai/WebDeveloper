@@ -1,46 +1,62 @@
-let IsDobOpen = false;
-let DateofBirth;
-const IconSattingEL = document.getElementById("iconSetting");
-const SettingContentEL = document.getElementById("setting_content");
-const incitialTextEL = document.getElementById("incitialText");
-const afterDOBbuttonEL = document.getElementById("afterDOBbutton");
-const DOBButtonEL = document.getElementById("DOBButton");
-const useclass = document.querySelectorAll("DOBButton");
-const yearEl = document.querySelectorAll(".years");
-const monthEl = document.querySelectorAll(".month");
-const dayEl = document.querySelectorAll(".day");
-const hoursEl = document.querySelectorAll(".hours");
-const minutesEl = document.querySelectorAll(".minutes");
-const secondsEl = document.querySelectorAll(".seconds");
+let iconSetting = document.querySelector("#iconSetting");
+let setting_content = document.querySelector("#setting_content");
 
-const toggleDateOfBirthSelector = () => {
-  if (IsDobOpen) {
-    SettingContentEL.classList.add("hide");
-  } else {
-    SettingContentEL.classList.remove("hide");
-  }
-  IsDobOpen = !IsDobOpen;
-  // console.log("toggle", IsDobOpen);
-};
+let DOB = document.querySelector("#DOB");
+let DOBButton = document.querySelector("#DOBButton");
 
-const setDobhendler = () => {
-  DateofBirth = DOB.value;
-  if (DateofBirth) {
-    incitialTextEL.classList.add("hide");
-    afterDOBbuttonEL.classList.remove("hide");
-  } else {
-    afterDOBbuttonEL.classList.add("hide");
-    incitialTextEL.classList.remove("hide");
-  }
-};
+let incitialText = document.querySelector("#incitialText");
+let afterDOBbutton = document.querySelector("#afterDOBbutton");
 
-const UpdateAge = () => {
+const years = document.querySelector(".years");
+const month = document.querySelector(".month");
+const day = document.querySelector(".day");
+const hours = document.querySelector(".hours");
+const minutes = document.querySelector(".minutes");
+const seconds = document.querySelector(".seconds");
+
+iconSetting.addEventListener("click", () => {
+  setting_content.classList.toggle("hide");
+});
+
+DOBButton.addEventListener("click", () => {
+  const birthDate = new Date(DOB.value);
   const currentDate = new Date();
-  console.log({ currentDate });
-};
 
-UpdateAge();
+  birthDate.getTime();
+  currentDate.getTime();
 
-setDobhendler();
-IconSattingEL.addEventListener("click", toggleDateOfBirthSelector);
-DOBButtonEL.addEventListener("click", setDobhendler);
+  console.log(birthDate);
+  console.log(currentDate);
+
+  const difference = currentDate.getTime() - birthDate.getTime();
+  console.log(difference);
+
+  const torleseconds = Math.floor(difference / 1000);
+  console.log(torleseconds);
+
+  const totalMinutes = Math.floor(torleseconds / 60);
+  console.log(totalMinutes + "totleMinutes");
+
+  const totalhours = Math.floor(totalMinutes / 60);
+  console.log("totlehours " + totalhours);
+
+  const totalDay = Math.floor(totalhours / 24);
+  console.log(totalDay + " total Day");
+
+  function calculateAge(birthDate) {
+    const now = new Date();
+
+    let years = now.getFullYear() - birthDate.getFullYear();
+    let months = now.getMonth() - birthDate.getMonth();
+    let days = now.getDate() - birthDate.getDate();
+
+    // console.log(`${years} years`);
+    // console.log(`${month} month`);
+    // console.log(`${day} day`);
+    
+    
+
+  }
+});
+
+

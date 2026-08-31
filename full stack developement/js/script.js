@@ -683,19 +683,81 @@
 
 // 5. How do you find the length of an array?
 
-let arr = [ 12,2,4,445,66,77,99 ]
+// let arr = [ 12,2,4,445,66,77,99 ]
 
 // console.log(arr);
 
-let lergest = arr[0];
+// let lergest = arr[0];
 
-for (let i = 0; i < arr.length; i++) {
-    // const element = array[i];
-    if(lergest < arr[i]){
-        lergest += arr[i]
-    }
+// for (let i = 0; i < arr.length; i++) {
+//     // const element = array[i];
+//     if(lergest < arr[i]){
+//         lergest += arr[i]
+//     }
     
-}   
+// }   
+// console.log(lergest);
 
-console.log(lergest);
+
+
+
+// ## 7. Arrays
+
+// 2. How do you create an array?
+// let arr = ['himu',24,true]
+// console.log(arr);
+
+// 3. How do you access an array element?
+// let arr = [ 12,2,4,445,66,77,99 ];
+// console.log(arr[2]);
+
+
+
+// 4. What is an array index?
+// let arr = [ 12,2,4,445,66,77,99 ]
+
+// console.log(arr[3])
+
+// 5. How do you find the length of an array?
+
+// let arr2 = [2,3,4,65,7,4,3];
+
+
+// console.log(arr2.length);
+
+
+
+
+// 6. Add an element to an array.
+
+// let arr2 = [2,3,4,65,7,4,3];
+
+// arr2.push(23)
+
+// console.log(arr2);
+
+
+
+// 7. Remove an element from an array.
+let arr2 = [2,3,4,65,7,4,3];
+
+arr2.pop()
+
+console.log(arr2);
+
+// 8. Find the first and last element of an array.
+
+for(let i = 0 ; i < arr2.length; i++){
+    console.log(arr2[i]);
+}
+
+// 9. Find the largest number in an array.
+  
+// 10. Find the smallest number in an array.
+// 11. Calculate the sum of all numbers in an array.
+// 12. Reverse an array.
+// 13. Remove duplicate values from an array.
+
+
+
 
